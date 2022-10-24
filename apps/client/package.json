@@ -8,9 +8,11 @@
     "start": "vite preview"
   },
   "dependencies": {
+    "@torpleng/data": "workspace:0.0.0",
     "solid-js": "1.6.0"
   },
   "devDependencies": {
+    "@types/youtube": "^0.0.47",
     "vite": "3.1.8",
     "vite-plugin-html": "3.2.0",
     "vite-plugin-solid": "2.3.10",

@@ -6,6 +6,8 @@ importers:
     specifiers:
       '@typescript-eslint/parser': 5.40.1
       eslint: 8.26.0
+      eslint-config-prettier: ^8.5.0
+      eslint-plugin-prettier: ^4.2.1
       eslint-plugin-solid: 0.7.4
       prettier: 2.7.1
       turbo: 1.6.1
@@ -15,12 +17,16 @@ importers:
     devDependencies:
       '@typescript-eslint/parser': 5.40.1_wyqvi574yv7oiwfeinomdzmc3m
       eslint: 8.26.0
+      eslint-config-prettier: 8.5.0_eslint@8.26.0
+      eslint-plugin-prettier: 4.2.1_aniwkeyvlpmwkidetuytnokvcm
       eslint-plugin-solid: 0.7.4_wyqvi574yv7oiwfeinomdzmc3m
       prettier: 2.7.1
       typescript: 4.8.4
 
   apps/client:
     specifiers:
+      '@torpleng/data': workspace:0.0.0
+      '@types/youtube': ^0.0.47
       solid-js: 1.6.0
       vite: 3.1.8
       vite-plugin-html: 3.2.0
@@ -28,8 +34,10 @@ importers:
       vite-plugin-windicss: 1.8.8
       vitest: 0.24.3
     dependencies:
+      '@torpleng/data': link:../../packages/data
       solid-js: 1.6.0
     devDependencies:
+      '@types/youtube': 0.0.47
       vite: 3.1.8
       vite-plugin-html: 3.2.0_vite@3.1.8
       vite-plugin-solid: 2.3.10_solid-js@1.6.0+vite@3.1.8
@@ -66,6 +74,9 @@ importers:
       ts-loader: 9.4.1_qqxisngxjbp7lstdk7boexbu3e
       ts-morph: 16.0.0
       webpack: 5.74.0
+
+  packages/data:
+    specifiers: {}
 
 packages:
 
@@ -1018,6 +1029,10 @@ packages:
 
   /@types/semver/7.3.12:
     resolution: {integrity: sha512-WwA1MW0++RfXmCr12xeYOOC5baSC9mSb0ZqCquFzKhcoF4TvHu5MKOuXsncgZcpVFhB1pXd5hZmM0ryAoCp12A==}
+    dev: true
+
+  /@types/youtube/0.0.47:
+    resolution: {integrity: sha512-uwqm0DUeg+2pff/8y9b22JJb+qWKOcG5aCn2yyT7hmLdK/M8+VECcK6QuNqdAR93IAqTmZeqK2nizTlQg5j+XA==}
     dev: true
 
   /@typescript-eslint/parser/5.40.1_wyqvi574yv7oiwfeinomdzmc3m:
@@ -2176,6 +2191,32 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /eslint-config-prettier/8.5.0_eslint@8.26.0:
+    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+    dependencies:
+      eslint: 8.26.0
+    dev: true
+
+  /eslint-plugin-prettier/4.2.1_aniwkeyvlpmwkidetuytnokvcm:
+    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      eslint: '>=7.28.0'
+      eslint-config-prettier: '*'
+      prettier: '>=2.0.0'
+    peerDependenciesMeta:
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 8.26.0
+      eslint-config-prettier: 8.5.0_eslint@8.26.0
+      prettier: 2.7.1
+      prettier-linter-helpers: 1.0.0
+    dev: true
+
   /eslint-plugin-solid/0.7.4_wyqvi574yv7oiwfeinomdzmc3m:
     resolution: {integrity: sha512-AqGl5gyTA2qpF3VnzHcXgZuCjYp7a1Rmukcg+OIPA4fX7TkmsYZDcclh5jw9JwPsc4IcU8T9RYkJW5pQ52Gzcg==}
     engines: {node: '>=12.0.0'}
@@ -2372,6 +2413,10 @@ packages:
 
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+
+  /fast-diff/1.2.0:
+    resolution: {integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==}
+    dev: true
 
   /fast-glob/3.2.12:
     resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
@@ -3735,6 +3780,13 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: true
+
+  /prettier-linter-helpers/1.0.0:
+    resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      fast-diff: 1.2.0
     dev: true
 
   /prettier/2.7.1:
