@@ -131,7 +131,7 @@ const App: Component = () => {
           target="_blank"
           rel="noopener"
         >
-          GitHub CunnyDev 😭
+          Contribute at GitHub
         </a>
       </p>
     </main>
