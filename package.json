@@ -1,37 +1,37 @@
 {
-  "name": "torpleng-anisong",
-  "version": "1.0.0",
-  "private": true,
-  "packageManager": "pnpm@7.14.0",
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=16.0.0"
-  },
-  "scripts": {
-    "dev": "turbo run dev --parallel",
-    "dev:client": "turbo run dev --filter=\"./apps/client\"",
-    "dev:server": "turbo run dev --filter=\"./apps/server\"",
-    "build": "turbo run build",
-    "build:client": "turbo run build --filter=\"./apps/client\"",
-    "build:server": "turbo run build --filter=\"./apps/server\"",
-    "start": "turbo run start",
-    "start:client": "turbo run build --filter=\"./apps/client\"",
-    "start:server": "turbo run build --filter=\"./apps/server\"",
-    "lint": "eslint . --fix",
-    "fmt:check": "prettier --check \"**/*.{ts,tsx,md}\"",
-    "fmt": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "test": "vitest --run"
-  },
-  "dependencies": {
-    "turbo": "1.6.1"
-  },
-  "devDependencies": {
-    "@typescript-eslint/parser": "5.40.1",
-    "eslint": "8.26.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-solid": "0.7.4",
-    "prettier": "2.7.1",
-    "typescript": "4.8.4"
-  }
+	"name": "torpleng-anisong",
+	"version": "1.0.0",
+	"private": true,
+	"packageManager": "pnpm@7.14.0",
+	"engines": {
+		"npm": ">=7.0.0",
+		"node": ">=16.0.0"
+	},
+	"scripts": {
+		"dev": "turbo run dev --parallel",
+		"dev:client": "turbo run dev --filter=\"./apps/client\"",
+		"dev:server": "turbo run dev --filter=\"./apps/server\"",
+		"build": "turbo run build",
+		"build:client": "turbo run build --filter=\"./apps/client\"",
+		"build:server": "turbo run build --filter=\"./apps/server\"",
+		"start": "turbo run start",
+		"start:client": "turbo run build --filter=\"./apps/client\"",
+		"start:server": "turbo run build --filter=\"./apps/server\"",
+		"lint": "eslint . --fix",
+		"fmt:check": "prettier --check \"**/*.{ts,tsx,md}\"",
+		"fmt": "prettier --write \"**/*.{ts,tsx,md}\"",
+		"test": "vitest --run"
+	},
+	"dependencies": {
+		"turbo": "1.6.1"
+	},
+	"devDependencies": {
+		"@typescript-eslint/parser": "5.40.1",
+		"eslint": "8.26.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-solid": "0.7.4",
+		"prettier": "2.7.1",
+		"typescript": "4.8.4"
+	}
 }

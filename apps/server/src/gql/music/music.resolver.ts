@@ -4,10 +4,10 @@ import { Resolver, Query } from '@nestjs/graphql'
 
 @Resolver()
 export class MusicResolver {
-	// constructor(private readonly service: MusicService) {}
+  // constructor(private readonly service: MusicService) {}
 
-	@Query(() => String)
-	hello(): string {
-		return 'hello world'
-	}
+  @Query(() => String)
+  hello(): string {
+    return 'hello world'
+  }
 }
