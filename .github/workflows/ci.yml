@@ -1,0 +1,101 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  build-client:
+    name: Build client
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [unbuntu-latest]
+        node: [16]
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+
+      - name: Setup node 🏗
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Setup pnpm 📦
+        id: pnpm-install
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory 📁
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - name: Setup pnpm cache 📦
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-install.outputs.dest }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Install dependencies 👨🏻‍💻
+        run: pnpm install --frozen-lockfile
+
+      - name: Build ⚒️
+        run: pnpm build:client
+
+  build-server:
+    name: Build server
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16]
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+
+      - name: Setup node 🏗
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Setup pnpm 📦
+        id: pnpm-install
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory 📁
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+      - name: Setup pnpm cache 📦
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-install.outputs.dest }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+      - name: Install dependencies 👨🏻‍💻
+        run: pnpm install
+
+      - name: Build ⚒️
+        run: pnpm build:server
