@@ -53,7 +53,7 @@ importers:
       '@nestjs/schematics': 9.0.3
       fastify: ^4.9.2
       graphql: ^16.6.0
-      mercurius: ^10.0.5
+      mercurius: 11.2.0
       ts-loader: 9.4.1
       ts-morph: 16.0.0
       webpack: 5.74.0
@@ -61,20 +61,17 @@ importers:
       '@nestjs/common': 9.1.5_yzt46al3aifnexifjjdb4dxxja
       '@nestjs/core': 9.1.5_vsetaglwzqrh7m5f7qpuxwsv6i
       '@nestjs/graphql': 10.1.3_og4o3i4slrjsyqd6uhu2yztsey
-      '@nestjs/mercurius': 10.1.3_bj6fbdenf6rqqmm57b6uczrjfa
+      '@nestjs/mercurius': 10.1.3_hjorlmarqszf7r7pmlukr23dm4
       '@nestjs/platform-fastify': 9.1.5_oi7pl2drsvwscscw3d6lgmg6yu
       fastify: 4.9.2
       graphql: 16.6.0
-      mercurius: 10.5.1_graphql@16.6.0
+      mercurius: 11.2.0_graphql@16.6.0
     devDependencies:
       '@nestjs/cli': 9.1.4
       '@nestjs/schematics': 9.0.3_typescript@4.8.4
       ts-loader: 9.4.1_qqxisngxjbp7lstdk7boexbu3e
       ts-morph: 16.0.0
       webpack: 5.74.0
-
-  packages/data:
-    specifiers: {}
 
 packages:
 
@@ -866,7 +863,7 @@ packages:
       reflect-metadata: 0.1.13
     dev: false
 
-  /@nestjs/mercurius/10.1.3_bj6fbdenf6rqqmm57b6uczrjfa:
+  /@nestjs/mercurius/10.1.3_hjorlmarqszf7r7pmlukr23dm4:
     resolution: {integrity: sha512-d3cq2zorG3BRk1TTyGrYgk9EI0cKST9Aty5Y4l8k7NikevjsGoNv1eFngX/88cDN3ExTLu6hK+GY/yRBHL22jQ==}
     peerDependencies:
       '@nestjs/common': ^8.2.3 || ^9.0.0
@@ -879,7 +876,7 @@ packages:
       '@nestjs/graphql': 10.1.3_og4o3i4slrjsyqd6uhu2yztsey
       fastify: 4.9.2
       graphql: 16.6.0
-      mercurius: 10.5.1_graphql@16.6.0
+      mercurius: 11.2.0_graphql@16.6.0
       tslib: 2.4.0
     dev: false
 
@@ -3345,8 +3342,8 @@ packages:
       fs-monkey: 1.0.3
     dev: true
 
-  /mercurius/10.5.1_graphql@16.6.0:
-    resolution: {integrity: sha512-TbG8XOTgw6XfPr3VCOvm2rAr3M8vSMbfhbroLXQ9vBS4NdSxpSAcDaq2WE8vdJIsP5XrVHxv94jCj8/0AQmPJg==}
+  /mercurius/11.2.0_graphql@16.6.0:
+    resolution: {integrity: sha512-xKqNx/QzJpW+FBsSHUTwBS+QPoevZ/o1jgMTxmIIBio0+wgINtlWNaoX2asUwTHoB3BG1IkNgY+PDsxra3y9iA==}
     engines: {node: '>=14.19.3'}
     peerDependencies:
       graphql: ^16.0.0
