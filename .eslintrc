@@ -1,19 +1,11 @@
 {
-	"root": true,
-	"env": {
-		"browser": true,
-		"node": true,
-		"es2019": true
-	},
-	"parser": "@typescript-eslint/parser",
-	"extends": [
-		"eslint:recommended",
-		"plugin:solid/typescript"
-	],
-	"ignorePatterns": [
-		"dist",
-		".turbo",
-		"node_modules",
-		"pnpm-lock.yaml"
-	]
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2019": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended", "plugin:solid/typescript"],
+  "ignorePatterns": ["dist", ".turbo", "node_modules", "pnpm-lock.yaml"]
 }

@@ -1,20 +1,20 @@
 {
-	"name": "client",
-	"version": "1.0.0",
-	"private": true,
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"start": "vite preview"
-	},
-	"dependencies": {
-		"solid-js": "1.6.0"
-	},
-	"devDependencies": {
-		"vite": "3.1.8",
-		"vite-plugin-html": "3.2.0",
-		"vite-plugin-solid": "2.3.10",
-		"vite-plugin-windicss": "1.8.8",
-		"vitest": "0.24.3"
-	}
+  "name": "client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview"
+  },
+  "dependencies": {
+    "solid-js": "1.6.0"
+  },
+  "devDependencies": {
+    "vite": "3.1.8",
+    "vite-plugin-html": "3.2.0",
+    "vite-plugin-solid": "2.3.10",
+    "vite-plugin-windicss": "1.8.8",
+    "vitest": "0.24.3"
+  }
 }
