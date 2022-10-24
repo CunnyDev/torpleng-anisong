@@ -35,13 +35,13 @@ export const songs: AniSong[] = [
 	  kana: {
 			name: 'Dimension Tripper!!!!',
 			author: 'nao',
-			lyrics: '...'
+			lyrics: 'そう今全ての次元が 結ばれる様に明日を飛び超えて まだ見えない新たな歴史を 描けるように…「Fortune favors the brave.」Dimension tripper!!!!'
 		},
 		romaji: {
 			name: 'Dimension Tripper!!!!',
 			author: 'nao',
 			lyrics: '...'
 		},
-		url: '...'
+		url: ''
 	}
 ]
