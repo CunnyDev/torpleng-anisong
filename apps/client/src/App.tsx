@@ -2,7 +2,7 @@
 
 import { Component, createSignal, For } from 'solid-js'
 
-import { songs, stripFurigana, toEmbedUrl } from '@torpleng/data'
+import { songs, stripFurigana, toEmbedUrl } from './libs/data'
 import { createPlayer } from './youtube'
 
 const App: Component = () => {
