@@ -9,8 +9,14 @@
 	},
 	"scripts": {
 		"dev": "turbo run dev --parallel",
+		"dev:client": "turbo run dev --filter=\"./apps/client\"",
+		"dev:server": "turbo run dev --filter=\"./apps/server\"",
 		"build": "turbo run build",
+		"build:client": "turbo run build --filter=\"./apps/client\"",
+		"build:server": "turbo run build --filter=\"./apps/server\"",
 		"start": "turbo run start",
+		"start:client": "turbo run build --filter=\"./apps/client\"",
+		"start:server": "turbo run build --filter=\"./apps/server\"",
 		"lint": "eslint . --fix",
 		"fmt:check": "prettier --check \"**/*.{ts,tsx,md}\"",
 		"fmt": "prettier --write \"**/*.{ts,tsx,md}\""

@@ -12,6 +12,7 @@
 	],
 	"ignorePatterns": [
 		"dist",
+		".turbo",
 		"node_modules",
 		"pnpm-lock.yaml"
 	]
