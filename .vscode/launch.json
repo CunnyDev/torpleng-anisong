@@ -7,9 +7,7 @@
 			"name": "Debug",
 			"runtimeExecutable": "pnpm",
 			"cwd": "${workspaceFolder}",
-			"runtimeArgs": [
-				"dev"
-			],
+			"runtimeArgs": ["dev"],
 			"resolveSourceMapLocations": [
 				"${workspaceFolder}/**",
 				"!**/node_modules/**"

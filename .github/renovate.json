@@ -1,8 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": [
-		"config:base"
-	],
+	"extends": ["config:base"],
 	"minor": {
 		"automerge": true
 	},
@@ -15,7 +13,5 @@
 	"dockerfile": {
 		"semanticCommitType": "build"
 	},
-	"ignorePresets": [
-		"workarounds:typesNodeVersioning"
-	]
+	"ignorePresets": ["workarounds:typesNodeVersioning"]
 }

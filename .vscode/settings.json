@@ -6,6 +6,6 @@
 		"**/.svn": true,
 		"**/.turbo": true,
 		"**/.DS_Store": true,
-		"**/Thumbs.db": true,
+		"**/Thumbs.db": true
 	}
 }
