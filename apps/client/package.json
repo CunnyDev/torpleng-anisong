@@ -8,6 +8,7 @@
 		"start": "vite preview"
 	},
 	"dependencies": {
+		"clsx": "^1.2.1",
 		"solid-js": "1.6.0"
 	},
 	"devDependencies": {
