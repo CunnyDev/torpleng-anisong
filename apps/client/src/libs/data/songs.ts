@@ -42,6 +42,6 @@ export const songs: AniSong[] = [
 			author: 'nao',
 			lyrics: '...'
 		},
-		url: ''
+		url: 'https://youtu.be/lplZrTGkvWY&t=209&end=232'
 	}
 ]
