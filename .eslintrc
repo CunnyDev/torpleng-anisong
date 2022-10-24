@@ -1,18 +1,23 @@
 {
-  "root": true,
-  "env": {
-    "browser": true,
-    "node": true,
-    "es2019": true
-  },
-  "parser": "@typescript-eslint/parser",
-  "extends": [
-    "eslint:recommended",
-    "plugin:solid/typescript",
-    "plugin:prettier/recommended"
-  ],
-  "ignorePatterns": ["dist", ".turbo", "node_modules", "pnpm-lock.yaml"],
-  "rules": {
-    "prettier/prettier": "warn"
-  }
+	"root": true,
+	"env": {
+		"browser": true,
+		"node": true,
+		"es2019": true
+	},
+	"parser": "@typescript-eslint/parser",
+	"extends": [
+		"eslint:recommended",
+		"plugin:solid/typescript",
+		"plugin:prettier/recommended"
+	],
+	"ignorePatterns": [
+		"dist",
+		".turbo",
+		"node_modules",
+		"pnpm-lock.yaml"
+	],
+	"rules": {
+		"prettier/prettier": "warn"
+	}
 }
