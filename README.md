@@ -7,7 +7,7 @@ _Original Version: [narze](https://github.com/narze/torpleng)_
 
 ## Contribution
 
-Edit file at `apps/client/src/libs/data/songs.ts`, follow schema.
+Edit file at `apps/client/src/libs/data/songs.ts` [this file](/apps/client/src/libs/data/songs.ts), follow schema.
 
 Example:
 
