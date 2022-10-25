@@ -31,19 +31,19 @@ export const songs: AniSong[] = [
     },
     url: 'https://youtu.be/EHzwIOi9lm8?t=24&end=33'
   },
-	{
-	  kana: {
-			name: 'Dimension Tripper!!!!',
-			author: 'nao',
-			lyrics: 
-			  'そう今全ての次元が 結ばれる様に明日を飛び超えて まだ見えない新たな歴史を 描けるように…「Fortune favors the brave.」Dimension tripper!!!!'
-		},
-		romaji: {
-			name: 'Dimension Tripper!!!!',
-			author: 'nao',
-			lyrics: 
-			  'sou ima subete no jigen ga musubareru you ni ashita wo tobikoete mada mienai aratana rekishi wo egakeru youni… “Fortune favors the brave.” Dimension tripper!!!!'
-		},
-		url: 'https://youtu.be/lplZrTGkvWY?t=209&end=232'
-	}
+  {
+    kana: {
+      name: 'Dimension Tripper!!!!',
+      author: 'nao',
+      lyrics:
+        'そう今全ての次元が 結ばれる様に明日を飛び超えて まだ見えない新たな歴史を 描けるように…「Fortune favors the brave.」Dimension tripper!!!!'
+    },
+    romaji: {
+      name: 'Dimension Tripper!!!!',
+      author: 'nao',
+      lyrics:
+        'sou ima subete no jigen ga musubareru you ni ashita wo tobikoete mada mienai aratana rekishi wo egakeru youni… “Fortune favors the brave.” Dimension tripper!!!!'
+    },
+    url: 'https://youtu.be/lplZrTGkvWY?t=209&end=232'
+  }
 ]

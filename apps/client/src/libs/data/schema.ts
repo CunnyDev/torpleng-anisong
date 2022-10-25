@@ -7,5 +7,5 @@ export interface SongData {
 export interface AniSong {
   kana: SongData
   romaji: SongData
-  url: `https://youtu.be/${string}?t=${string}&end=${string}`
+  url: `https://youtu.be/${string}?t=${number}&end=${number}`
 }
