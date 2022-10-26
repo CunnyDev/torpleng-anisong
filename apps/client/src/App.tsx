@@ -25,9 +25,9 @@ const App: Component = () => {
 
   return (
 		<main class="h-screen">
-			<div class="grid xl:grid-cols-2 grid-cols-1 items-center justify-center h-full">
+			<div class="grid xl:grid-cols-2 grid-cols-1 justify-center items-stretch h-full">
 				{/* Header */}
-				<h1 class="col-span-2 text-4xl text-center">
+				<h1 class="col-span-2 text-5xl m-auto text-center">
 					🎤 ต่อเพลง But Anisong 🎸
 				</h1>
 
@@ -85,6 +85,7 @@ const App: Component = () => {
 									'border p-4 rounded-lg hover:border-pink-300 hover:bg-pink-300 hover:cursor-pointer duration-100',
 									i() == songIndex() ? 'bg-pink-500 border-pink-500 text-white' : 'border-black'
 								)}
+								onClick={() => setSongIndex(i())}
 							>
 								{stripFurigana(
 									displayMode() === 'lyrics'
@@ -105,6 +106,32 @@ const App: Component = () => {
 						You can add more songs at <a href="https://github.com/CunnyDev/torpleng-anisong" class="underline">github</a>
 					</h2>
 
+					<div class="flex flex-row items-center justify-center gap-4">
+						<button
+							class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-400 duration-100"
+							onClick={() => songIndex() > 0 && setSongIndex(songIndex() - 1)}
+						>
+							Prev
+						</button>
+
+						<select
+							value={songIndex() + 1}
+							onChange={(e) => setSongIndex(+e.currentTarget.value - 1)}
+						>
+							<For each={Array.from({ length: songs.length }, (_, i) => i + 1)}>
+								{(v) => <option>{v}</option>}
+							</For>
+						</select>
+
+						<p>of {songs.length}</p>
+
+						<button
+							class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-400 duration-100"
+							onClick={() => songIndex() < songs.length - 1 && setSongIndex(songIndex() + 1)}
+						>
+							Next
+						</button>
+					</div>
 				</div>
 			</div>
 		</main>
