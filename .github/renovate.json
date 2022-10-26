@@ -1,17 +1,21 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:base"],
-	"minor": {
-		"automerge": true
-	},
-	"major": {
-		"automerge": false
-	},
-	"automergeType": "pr",
-	"prCreation": "immediate",
-	"semanticCommitScope": "deps",
-	"dockerfile": {
-		"semanticCommitType": "build"
-	},
-	"ignorePresets": ["workarounds:typesNodeVersioning"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "minor": {
+    "automerge": true
+  },
+  "major": {
+    "automerge": false
+  },
+  "automergeType": "pr",
+  "prCreation": "immediate",
+  "semanticCommitScope": "deps",
+  "dockerfile": {
+    "semanticCommitType": "build"
+  },
+  "ignorePresets": [
+    "workarounds:typesNodeVersioning"
+  ]
 }
