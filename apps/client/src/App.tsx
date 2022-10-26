@@ -25,14 +25,14 @@ const App: Component = () => {
 
   return (
 		<main class="h-screen">
-			<div class="grid xl:grid-cols-2 grid-cols-1 justify-center items-stretch h-full">
+			<div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-0 gap-4 justify-center items-stretch h-full">
 				{/* Header */}
-				<h1 class="col-span-2 text-5xl m-auto text-center">
+				<h1 class="xl:col-span-2 text-3xl m-auto p-4 font-bold text-center">
 					🎤 ต่อเพลง But Anisong 🎸
 				</h1>
 
 				{/* Player */}
-				<div class="flex flex-col gap-4 items-center">
+				<div class="player">
 					<iframe
 						id="playframe"
 						src={toEmbedUrl(songs[songIndex()].url)}
@@ -45,7 +45,7 @@ const App: Component = () => {
 				</div>
 
 				{/* Song List */}
-				<div class="row-span-2">
+				<div class="row-span-2 flex flex-col xl:border-none xl:p-0 xl:gap-0 border p-2 gap-2">
 					<div class="flex flex-row mx-[1em] justify-between">
 						<div class="flex flex-row">
 							<h1
@@ -99,7 +99,7 @@ const App: Component = () => {
 
 				{/* Controls */}
 				<div class="flex flex-col items-center justify-start gap-6">
-					<h1 class="text-4xl">
+					<h1 class="md:text-4xl text-3xl text-center">
 						{songIndex() + 1}. {songs[songIndex()].kana.author} - {songs[songIndex()].kana.name}
 					</h1>
 					<h2 class="text-lg text-gray-400">

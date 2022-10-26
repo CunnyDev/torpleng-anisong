@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Color+Emoji&family=Noto+Sans+Thai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Color+Emoji&family=Sarabun&display=swap');
 
 #root {
-  font-family: 'Noto Sans Thai', 'Kosugi', 'Noto Color Emoji', sans-serif;
+  font-family: 'Sarabun', 'Kosugi', 'Noto Color Emoji', sans-serif;
   margin: 8px;
+}
+
+.player {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 html::-webkit-scrollbar {
@@ -33,4 +39,23 @@ html::-webkit-scrollbar {
 
 .list::-webkit-scrollbar-thumb:hover {
 	background: #535353;
+}
+
+@media (max-width: 1124px) {
+	.player {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		padding-top: 56.25%;
+	}
+
+	.player iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
