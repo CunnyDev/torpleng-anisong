@@ -6,9 +6,9 @@
 }
 
 .player {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 html::-webkit-scrollbar {
@@ -16,46 +16,46 @@ html::-webkit-scrollbar {
 }
 
 .list {
-	list-style-type: decimal;
-	list-style-position: inside;
+  list-style-type: decimal;
+  list-style-position: inside;
 }
 
 .list li {
-	margin: 1em;
+  margin: 1em;
 }
 
 .list::-webkit-scrollbar {
-	width: 7px;
+  width: 7px;
 }
 
 .list::-webkit-scrollbar-track {
-	border-radius: 10px;
+  border-radius: 10px;
 }
 
 .list::-webkit-scrollbar-thumb {
-	background: rgb(146, 146, 146);
-	border-radius: 10px;
+  background: rgb(146, 146, 146);
+  border-radius: 10px;
 }
 
 .list::-webkit-scrollbar-thumb:hover {
-	background: #535353;
+  background: #535353;
 }
 
 @media (max-width: 1124px) {
-	.player {
-		position: relative;
-		overflow: hidden;
-		width: 100%;
-		padding-top: 56.25%;
-	}
+  .player {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
 
-	.player iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		width: 100%;
-		height: 100%;
-	}
+  .player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
