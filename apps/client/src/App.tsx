@@ -24,149 +24,92 @@ const App: Component = () => {
   })
 
   return (
-    <main class="container">
-      <div id="header">
-        <h1 class="text-center font-bold text-4xl">
-          🎤 ต่อเพลง but Anisong 🎸
-        </h1>
-      </div>
+		<main class="h-screen">
+			<div class="grid xl:grid-cols-2 grid-cols-1 items-center justify-center h-full">
+				{/* Header */}
+				<h1 class="col-span-2 text-4xl text-center">
+					🎤 ต่อเพลง But Anisong 🎸
+				</h1>
 
-      <div id="player">
-        <iframe
-          id="playframe"
-          src={toEmbedUrl(songs[songIndex()].url)}
-          width="560"
-          height="315"
-          class="rounded-lg m-auto shadow-xl"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
-      </div>
+				{/* Player */}
+				<div class="flex flex-col gap-4 items-center">
+					<iframe
+						id="playframe"
+						src={toEmbedUrl(songs[songIndex()].url)}
+						width="560"
+						height="315"
+						class="rounded-lg shadow-xl"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					/>
+				</div>
 
-			<div class="flex flex-col gap-2">
-				<div class="flex flex-row row-span-2 justify-between gap-4 overflow-y">
-					<div class="lyrics flex flex-col gap-4 w-full">
-						<div class="flex justify-between gap-4">
-							<div class="flex justify-center">
-								{/* Kana */}
-								<button
-									class={clsx(
-										'border-y border-l border-pink-600 rounded-l-lg p-2',
-										kanaMode() === 'kana' && 'bg-pink-200 text-pink-500'
-									)}
-									onClick={() => setKanaMode('kana')}
-								>
-									Kana
-								</button>
-								{/* Romaji */}
-								<button
-									class={clsx(
-										'border border-pink-600 rounded-r-lg p-2',
-										kanaMode() === 'romaji' && 'bg-pink-200 text-pink-500'
-									)}
-									onClick={() => setKanaMode('romaji')}
-								>
-									Romaji
-								</button>
-							</div>
-
-							<div class="flex justify-center">
-								{/* Lyrics */}
-								<button
-									class={clsx(
-										'border-y border-l border-pink-600 rounded-l-lg p-2',
-										displayMode() === 'lyrics' && 'bg-pink-200 text-pink-500'
-									)}
-									onClick={() => setDisplayMode('lyrics')}
-								>
-									Lyrics
-								</button>
-								{/* Name */}
-								<button
-									class={clsx(
-										'border border-pink-600 rounded-r-lg p-2',
-										displayMode() === 'name' && 'bg-pink-200 text-pink-500'
-									)}
-									onClick={() => setDisplayMode('name')}
-								>
-									Name
-								</button>
-							</div>
+				{/* Song List */}
+				<div class="row-span-2">
+					<div class="flex flex-row mx-[1em] justify-between">
+						<div class="flex flex-row">
+							<h1
+								class={clsx("border-y border-l border-black p-2 rounded-l-lg", kanaMode() === 'kana' && 'bg-pink-200')}
+								onClick={() => setKanaMode('kana')}
+							>
+								Kana
+							</h1>
+							<h1
+								class={clsx("border border-black p-2 rounded-r-lg", kanaMode() === 'romaji' && 'bg-pink-200')}
+								onClick={() => setKanaMode('romaji')}
+							>
+								Romaji
+							</h1>
+						</div>
+						<div class="flex flex-row">
+							<h1
+								class={clsx("border-y border-l border-black p-2 rounded-l-lg", displayMode() === 'lyrics' && 'bg-pink-200')}
+								onClick={() => setDisplayMode('lyrics')}
+							>
+								Lyrics
+							</h1>
+							<h1
+								class={clsx("border border-black p-2 rounded-r-lg", displayMode() === 'name' && 'bg-pink-200')}
+								onClick={() => setDisplayMode('name')}
+							>
+								Name
+							</h1>
 						</div>
 					</div>
-				</div>
-
-				<div id="song-list">
-					<ol>
-						<For each={songs}>
-							{(song, i) => (
-								<li
-									class={clsx(
-										'border p-4 rounded-lg',
-										i() == songIndex()
-											? 'bg-pink-400 text-white font-bold duration-100'
-											: 'border-black'
-									)}
-								>
-									{i() + 1}.{' '}
-									{stripFurigana(
-										displayMode() === 'lyrics'
-											? song[kanaMode()].lyrics
-											: `${song[kanaMode()].author} - ${song[kanaMode()].name}`
-									)}
-								</li>
-							)}
-						</For>
+					<ol class="list overflow-y-auto max-h-[80vh]">
+						<For
+							each={songs}
+						>{(song, i) =>
+							<li
+								class={clsx(
+									'border p-4 rounded-lg hover:border-pink-300 hover:bg-pink-300 hover:cursor-pointer duration-100',
+									i() == songIndex() ? 'bg-pink-500 border-pink-500 text-white' : 'border-black'
+								)}
+							>
+								{stripFurigana(
+									displayMode() === 'lyrics'
+										? song[kanaMode()].lyrics
+										: `${song[kanaMode()].author} - ${song[kanaMode()].name}`
+								)}
+							</li>
+						}</For>
 					</ol>
 				</div>
+
+				{/* Controls */}
+				<div class="flex flex-col items-center justify-start gap-6">
+					<h1 class="text-4xl">
+						{songIndex() + 1}. {songs[songIndex()].kana.author} - {songs[songIndex()].kana.name}
+					</h1>
+					<h2 class="text-lg text-gray-400">
+						You can add more songs at <a href="https://github.com/CunnyDev/torpleng-anisong" class="underline">github</a>
+					</h2>
+
+				</div>
 			</div>
-
-      <div id="functions">
-        {/* Song Name */}
-        <div class="flex flex-col items-center justify-center gap-2">
-          <h2 class="text-2xl">
-            {songIndex() + 1}. {songs[songIndex()].kana.author} -{' '}
-            {songs[songIndex()].kana.name}
-          </h2>
-        </div>
-
-        {/* Controller */}
-        <div class="flex items-center justify-center gap-2">
-          <button
-            class="px-4 py-2 border border-black rounded-lg active:bg-black active:text-white duration-100"
-            onClick={() =>
-              setSongIndex(songIndex() > 0 ? songIndex() - 1 : songIndex())
-            }
-          >
-            Previous
-          </button>
-
-          <select
-            value={songIndex() + 1}
-            onChange={(e) => setSongIndex(+e.currentTarget.value - 1)}
-            class="border"
-          >
-            <For each={Array.from({ length: songs.length }, (_, i) => i + 1)}>
-              {(v) => <option>{v}</option>}
-            </For>
-          </select>
-
-          <p>of {songs.length}</p>
-
-          <button
-            class="px-4 py-2 border border-black rounded-lg active:bg-black active:text-white duration-100"
-            onClick={() =>
-              setSongIndex(
-                songIndex() < songs.length - 1 ? songIndex() + 1 : songIndex()
-              )
-            }
-          >
-            Next
-          </button>
-        </div>
-      </div>
-    </main>
+		</main>
   )
+
 }
 
 export default App
