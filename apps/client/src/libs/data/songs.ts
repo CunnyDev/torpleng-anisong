@@ -18,7 +18,7 @@ export const songs: AniSong[] = [
   },
   {
     kana: {
-      name: 'ノーポイッ',
+      name: 'ノーポイッ!',
       author: "Petit Rabbit's",
       lyrics:
         'ノーノー! チリ{積,す}モですよ あきらめなければ {努力,どりょく}はそんなに{実,みの}らない でもちょっぴりいいことありそう'
