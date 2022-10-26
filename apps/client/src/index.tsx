@@ -1,3 +1,4 @@
+import '../index.css'
 import 'windi.css'
 import { render } from 'solid-js/web'
 
