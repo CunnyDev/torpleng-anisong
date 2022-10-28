@@ -23,7 +23,7 @@
     "test": "vitest --run"
   },
   "dependencies": {
-    "turbo": "1.6.1"
+    "turbo": "1.6.2"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "5.41.0",
