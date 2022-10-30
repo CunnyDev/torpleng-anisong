@@ -27,7 +27,7 @@ importers:
     specifiers:
       '@types/youtube': 0.0.47
       clsx: 1.2.1
-      solid-js: 1.6.0
+      solid-js: 1.6.1
       vite: 3.2.1
       vite-plugin-html: 3.2.0
       vite-plugin-solid: 2.3.10
@@ -35,12 +35,12 @@ importers:
       vitest: 0.24.3
     dependencies:
       clsx: 1.2.1
-      solid-js: 1.6.0
+      solid-js: 1.6.1
     devDependencies:
       '@types/youtube': 0.0.47
       vite: 3.2.1
       vite-plugin-html: 3.2.0_vite@3.2.1
-      vite-plugin-solid: 2.3.10_solid-js@1.6.0+vite@3.2.1
+      vite-plugin-solid: 2.3.10_solid-js@1.6.1+vite@3.2.1
       vite-plugin-windicss: 1.8.8_vite@3.2.1
       vitest: 0.24.3
 
@@ -2360,12 +2360,12 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /solid-js/1.6.0:
-    resolution: {integrity: sha512-db5s65ErgZnBhapPx77qauzul8akHlMCvirS+Y86U4abMa3uizMVNW9ql3UxbO0yMzMGNpFJwUiOlXmJCbwVpA==}
+  /solid-js/1.6.1:
+    resolution: {integrity: sha512-i8OmR419Hr0918Or6sm1ET/cgmxTtAB7Bdz/UwhZ7G2THixrvVSO3jd+C7YqMKKfVwmf8PJ2gUSbKE8NKv28GA==}
     dependencies:
       csstype: 3.1.1
 
-  /solid-refresh/0.4.1_solid-js@1.6.0:
+  /solid-refresh/0.4.1_solid-js@1.6.1:
     resolution: {integrity: sha512-v3tD/OXQcUyXLrWjPW1dXZyeWwP7/+GQNs8YTL09GBq+5FguA6IejJWUvJDrLIA4M0ho9/5zK2e9n+uy+4488g==}
     peerDependencies:
       solid-js: ^1.3
@@ -2373,7 +2373,7 @@ packages:
       '@babel/generator': 7.19.6
       '@babel/helper-module-imports': 7.18.6
       '@babel/types': 7.19.4
-      solid-js: 1.6.0
+      solid-js: 1.6.1
     dev: true
 
   /source-map-js/1.0.2:
@@ -2654,7 +2654,7 @@ packages:
       vite: 3.2.1
     dev: true
 
-  /vite-plugin-solid/2.3.10_solid-js@1.6.0+vite@3.2.1:
+  /vite-plugin-solid/2.3.10_solid-js@1.6.1+vite@3.2.1:
     resolution: {integrity: sha512-5jMF+QFk2TQaPLlDl7LvZZ99D4kO1X+rD9LR78p9sx9O+XisVSQaHFPLrCsyW/lXuBwub+ox/pNaZdCUZJwd3Q==}
     peerDependencies:
       solid-js: ^1.3.17
@@ -2664,8 +2664,8 @@ packages:
       '@babel/preset-typescript': 7.18.6_@babel+core@7.19.6
       babel-preset-solid: 1.6.0_@babel+core@7.19.6
       merge-anything: 5.0.4
-      solid-js: 1.6.0
-      solid-refresh: 0.4.1_solid-js@1.6.0
+      solid-js: 1.6.1
+      solid-refresh: 0.4.1_solid-js@1.6.1
       vite: 3.2.1
     transitivePeerDependencies:
       - supports-color

@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "clsx": "1.2.1",
-    "solid-js": "1.6.0"
+    "solid-js": "1.6.1"
   },
   "devDependencies": {
     "@types/youtube": "0.0.47",
