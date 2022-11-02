@@ -60,5 +60,20 @@ export const songs: AniSong[] = [
         'papapa maru de party onna no ko atsumaru dake de happy day sonna mainichi runrunrun step fun de hanauta utacchatte oki ni iri no jikan wo sugoshitai na...tte kangaete hoppegayurun deshimauyo'
     },
     url: 'https://youtu.be/ILvjzfFpREk?t=116&end=139'
+  },
+  {
+    kana: {
+      name: '心臓を捧げよ',
+      author: 'Linked Horizon',
+      lyrics:
+        '(捧げ)よ！　捧げよ！　心臓を捧げよ！ 全ての犠牲は　今この瞬間のために 捧げよ！　捧げよ！　心臓を捧げよ！ 進むべき未来を　その手で切り拓け……'
+    },
+    romaji: {
+      name: 'Shinzou wo Sasageyo',
+      author: 'Linked Horizon',
+      lyrics:
+        '(sasage)yo! sasageyo! shinzou wo sasageyo! subete no gisei wa ima kono toki no tameni sasageyo! sasageyo! shinzou wo sasageyo! susumubeki mirai wo sono te de kirihirake'
+    },
+    url: 'https://youtu.be/8QPyFlJNmus?t=54&end=76'
   }
 ]
