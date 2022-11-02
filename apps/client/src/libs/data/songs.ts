@@ -46,4 +46,19 @@ export const songs: AniSong[] = [
     },
     url: 'https://youtu.be/eXLW5EPks20?t=208&end=232'
   },
+  {
+    kana: {
+      name: 'おもちゃ箱ハピズム♪',
+      author: 'メグ (村川梨衣)',
+      lyrics:
+        'パパパまるでパーティー おんなのこ集まるだけでハッピーディ そんな毎日 るんるんるんステップ踏んで はなうた♪歌っちゃって お気に入りの時間を過ごしたいな…って考えて ほっぺがゆるんでしまうよ'
+    },
+    romaji: {
+      name: 'Omocha Bako Happism',
+      author: 'Megu (Murakawa Rie)',
+      lyrics:
+        'papapa maru de party onna no ko atsumaru dake de happy day sonna mainichi runrunrun step fun de hanauta utacchatte oki ni iri no jikan wo sugoshitai na...tte kangaete hoppegayurun deshimauyo'
+    },
+    url: 'https://youtu.be/ILvjzfFpREk?t=116&end=139'
+  }
 ]
