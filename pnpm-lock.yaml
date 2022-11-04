@@ -30,7 +30,7 @@ importers:
       solid-js: 1.6.1
       vite: 3.2.2
       vite-plugin-html: 3.2.0
-      vite-plugin-solid: 2.3.10
+      vite-plugin-solid: 2.4.0
       vite-plugin-windicss: 1.8.8
       vitest: 0.24.5
     dependencies:
@@ -40,7 +40,7 @@ importers:
       '@types/youtube': 0.0.47
       vite: 3.2.2
       vite-plugin-html: 3.2.0_vite@3.2.2
-      vite-plugin-solid: 2.3.10_solid-js@1.6.1+vite@3.2.2
+      vite-plugin-solid: 2.4.0_solid-js@1.6.1+vite@3.2.2
       vite-plugin-windicss: 1.8.8_vite@3.2.2
       vitest: 0.24.5
 
@@ -2654,8 +2654,8 @@ packages:
       vite: 3.2.2
     dev: true
 
-  /vite-plugin-solid/2.3.10_solid-js@1.6.1+vite@3.2.2:
-    resolution: {integrity: sha512-5jMF+QFk2TQaPLlDl7LvZZ99D4kO1X+rD9LR78p9sx9O+XisVSQaHFPLrCsyW/lXuBwub+ox/pNaZdCUZJwd3Q==}
+  /vite-plugin-solid/2.4.0_solid-js@1.6.1+vite@3.2.2:
+    resolution: {integrity: sha512-Rr+t2sr9TWIvH16yzBZzx6O9YSpYAvcwKUMPqbi/4iU3mRumXQ4O10i1XGtQIynC7U3XwJsMzAJigDFGbiJBiw==}
     peerDependencies:
       solid-js: ^1.3.17
       vite: ^3.0.0
@@ -2667,6 +2667,7 @@ packages:
       solid-js: 1.6.1
       solid-refresh: 0.4.1_solid-js@1.6.1
       vite: 3.2.2
+      vitefu: 0.1.1_vite@3.2.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2713,6 +2714,17 @@ packages:
       rollup: 2.79.1
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /vitefu/0.1.1_vite@3.2.2:
+    resolution: {integrity: sha512-HClD14fjMJ+NQgXBqT3dC3RdO/+Chayil+cCPYZKY3kT+KcJomKzrdgzfCHJkIL2L0OAY+VPvrSW615iPtc7ag==}
+    peerDependencies:
+      vite: ^3.0.0
+    peerDependenciesMeta:
+      vite:
+        optional: true
+    dependencies:
+      vite: 3.2.2
     dev: true
 
   /vitest/0.24.5:
