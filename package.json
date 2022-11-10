@@ -2,7 +2,7 @@
   "name": "torpleng-anisong",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@7.14.2",
+  "packageManager": "pnpm@7.15.0",
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=16.0.0"
