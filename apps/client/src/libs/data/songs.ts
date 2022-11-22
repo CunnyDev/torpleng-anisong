@@ -75,5 +75,20 @@ export const songs: AniSong[] = [
         '(sasage)yo! sasageyo! shinzou wo sasageyo! subete no gisei wa ima kono toki no tameni sasageyo! sasageyo! shinzou wo sasageyo! susumubeki mirai wo sono te de kirihirake'
     },
     url: 'https://youtu.be/8QPyFlJNmus?t=54&end=76'
+  },
+	{
+    kana: {
+      name: '残機',
+      author: 'ずっと真夜中でいいのに',
+      lyrics:
+        '欠点です 現状把握しちゃうから中断中 もう譲渡 見せびらかし合いましょ劣等感妄 変えられゃしないってわかってるからぁ?'
+    },
+    romaji: {
+      name: 'Time Left',
+      author: 'ZUTOMAYO',
+      lyrics:
+        'ketten desu genjou haaku shichau kara chuudan chuu mou jouto misebirakashi aimasho rettoukan mou kaerare ya shinai tte wakatteru karaa?'
+    },
+    url: 'https://youtu.be/6OC92oxs4gA?t=32&end=41'
   }
 ]
