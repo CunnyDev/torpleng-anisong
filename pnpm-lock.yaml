@@ -8,7 +8,7 @@ importers:
       eslint: 8.34.0
       eslint-config-prettier: 8.6.0
       eslint-plugin-prettier: 4.2.1
-      eslint-plugin-solid: 0.9.0
+      eslint-plugin-solid: 0.9.4
       prettier: 2.8.0
       turbo: 1.7.0
       typescript: 4.9.3
@@ -19,7 +19,7 @@ importers:
       eslint: 8.34.0
       eslint-config-prettier: 8.6.0_eslint@8.34.0
       eslint-plugin-prettier: 4.2.1_5grijkxfyr6nwzrhewufwnhey4
-      eslint-plugin-solid: 0.9.0_zimmwslodd2ofrq5xsokgm35r4
+      eslint-plugin-solid: 0.9.4_zimmwslodd2ofrq5xsokgm35r4
       prettier: 2.8.0
       typescript: 4.9.3
 
@@ -1420,8 +1420,8 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-solid/0.9.0_zimmwslodd2ofrq5xsokgm35r4:
-    resolution: {integrity: sha512-hvl2aRrh6HTGOqKBFgMhDZZpW+ngFRZiaKuNCuzCEal+opc3zHmE6Cg+NpSPVS7VfTlrOz4VAtwWOcWm2VPDow==}
+  /eslint-plugin-solid/0.9.4_zimmwslodd2ofrq5xsokgm35r4:
+    resolution: {integrity: sha512-AGS7XnkepV2jiFwBMSg3FW7GKe6uJwgx65nnRC7I6s0dbV7rGpouwj9KDkXV5NJHQENxACeOLUTgjyMi3JeHNw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
