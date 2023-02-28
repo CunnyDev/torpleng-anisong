@@ -75,5 +75,20 @@ export const songs: AniSong[] = [
         '(sasage)yo! sasageyo! shinzou wo sasageyo! subete no gisei wa ima kono toki no tameni sasageyo! sasageyo! shinzou wo sasageyo! susumubeki mirai wo sono te de kirihirake'
     },
     url: 'https://youtu.be/8QPyFlJNmus?t=54&end=76'
-  }
+  },
+  {
+    kana: {
+      name: '恋愛サーキュレーション',
+      author: '花澤香菜',
+      lyrics:
+        'でも　そんなんじゃ　だめ う　そんなんじゃ　ほら 心は進化するよ もっと　もっと 言葉にすれば消えちゃう関係なら 言葉を消せばいいやって 思ってた　恐れてた だけど　あれ?'
+    },
+    romaji: {
+      name: 'Renai Circulation',
+      author: 'Kana Hanazawa',
+      lyrics:
+        'Se no~ Demo sonnan ja dame Mou sonnan ja hora Kokoro wa shinka suru yo Motto motto Kotoba ni sureba kiechau kankei nara Kotoba wo keseba ii ya tte Omotteta? Osoreteta? Dakedo are?'
+    },
+    url: 'https://youtu.be/uKxyLmbOc0Q?t=0&end=32'
+  },
 ]
