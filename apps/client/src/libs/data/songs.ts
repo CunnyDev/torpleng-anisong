@@ -75,5 +75,20 @@ export const songs: AniSong[] = [
         '(sasage)yo! sasageyo! shinzou wo sasageyo! subete no gisei wa ima kono toki no tameni sasageyo! sasageyo! shinzou wo sasageyo! susumubeki mirai wo sono te de kirihirake'
     },
     url: 'https://youtu.be/8QPyFlJNmus?t=54&end=76'
+  },
+  {
+    kana: {
+      name: 'Trust You [機動戦士ガンダム00]',
+      author: 'MARKIE, JIN NAKAMURA, 伊藤由奈',
+      lyrics:
+        '世界の果てを誰が見たの 旅の終わりを誰が告げるの 今は答えが見えなくて　永い夜でも'
+    },
+    romaji: {
+      name: 'Trust You [Mobile Suit Gundam OO Season 2]',
+      author: 'MARKIE, JIN NAKAMURA, Yuna Ito',
+      lyrics:
+        'Sekai wo hatte odare ga mita no Tabi no owari odare ga tsugeru no Ima wa kotae ga mienakute nagai yoru demo Shinjita michi wo susunde hoshii'
+    },
+    url: 'https://youtu.be/j8aecF5HXm4?t=119&end=137'
   }
 ]
