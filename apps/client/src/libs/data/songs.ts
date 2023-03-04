@@ -78,17 +78,17 @@ export const songs: AniSong[] = [
   },
   {
     kana: {
-      name: '恋愛サーキュレーション',
-      author: '花澤香菜',
+      name: 'More One Night',
+      author: '水瀬いのり',
       lyrics:
-        'でも　そんなんじゃ　だめ う　そんなんじゃ　ほら 心は進化するよ もっと　もっと 言葉にすれば消えちゃう関係なら 言葉を消せばいいやって 思ってた　恐れてた だけど　あれ?'
+        '(気付)けばキミとの旅支度 モノクロに輝く楽園へLet\'s go 作りましょ 作りましょ あなたと私の世界をさあ作りましょ 始めましょ 始めましょ 何から始めましょ？'
     },
     romaji: {
-      name: 'Renai Circulation',
-      author: 'Kana Hanazawa',
+      name: 'More One Night',
+      author: 'Inori Minase, Yurika Kubo',
       lyrics:
-        'Se no~ Demo sonnan ja dame Mou sonnan ja hora Kokoro wa shinka suru yo Motto motto Kotoba ni sureba kiechau kankei nara Kotoba wo keseba ii ya tte Omotteta? Osoreteta? Dakedo are?'
+        '(Kidzu)keba kimi to no tabi jitaku Monokuro ni kagayaku rakuen e Let\'s go Tsukurimasho tsukurimasho Anata to watashi no sekai o saa tsukuri masho Hajimemasho hajimemasho Nani kara hajimemasho?'
     },
-    url: 'https://youtu.be/uKxyLmbOc0Q?t=0&end=32'
+    url: 'https://youtu.be/sQn6j79Kgiw?t=28&end=45'
   },
 ]
