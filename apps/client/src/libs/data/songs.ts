@@ -75,5 +75,20 @@ export const songs: AniSong[] = [
         '(sasage)yo! sasageyo! shinzou wo sasageyo! subete no gisei wa ima kono toki no tameni sasageyo! sasageyo! shinzou wo sasageyo! susumubeki mirai wo sono te de kirihirake'
     },
     url: 'https://youtu.be/8QPyFlJNmus?t=54&end=76'
-  }
+  },
+  {
+    kana: {
+      name: 'More One Night',
+      author: '水瀬いのり',
+      lyrics:
+        '(気付)けばキミとの旅支度 モノクロに輝く楽園へLet\'s go 作りましょ 作りましょ あなたと私の世界をさあ作りましょ 始めましょ 始めましょ 何から始めましょ？'
+    },
+    romaji: {
+      name: 'More One Night',
+      author: 'Inori Minase',
+      lyrics:
+        '(Kidzu)keba kimi to no tabi jitaku Monokuro ni kagayaku rakuen e Let\'s go Tsukurimasho tsukurimasho Anata to watashi no sekai o saa tsukuri masho Hajimemasho hajimemasho Nani kara hajimemasho?'
+    },
+    url: 'https://youtu.be/sQn6j79Kgiw?t=28&end=45'
+  },
 ]
