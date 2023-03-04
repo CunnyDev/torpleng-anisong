@@ -85,7 +85,7 @@ export const songs: AniSong[] = [
     },
     romaji: {
       name: 'More One Night',
-      author: 'Inori Minase, Yurika Kubo',
+      author: 'Inori Minase',
       lyrics:
         '(Kidzu)keba kimi to no tabi jitaku Monokuro ni kagayaku rakuen e Let\'s go Tsukurimasho tsukurimasho Anata to watashi no sekai o saa tsukuri masho Hajimemasho hajimemasho Nani kara hajimemasho?'
     },
