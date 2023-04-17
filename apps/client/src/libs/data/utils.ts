@@ -1,7 +1,13 @@
 import { AniSong } from './schema'
 
-export function stripFurigana(full: string) {
-  return full.replace(/{[^}]+}/g, (e) => e.split(',')[0].slice(1))
+export function parseFurigana(text: string) {
+  return text.split(/({[^}]+})/g).map((part) => {
+    const match = part.match(/{([^,]+),([^}]+)}/)
+    if (match) {
+      return `<ruby>${match[1]}<rt>${match[2]}</rt></ruby>`
+    }
+    return part
+  })
 }
 
 export function parseUrl(url: AniSong['url']) {

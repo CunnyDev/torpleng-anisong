@@ -4,7 +4,7 @@ import { Component, createSignal, For } from 'solid-js'
 
 import clsx from 'clsx'
 
-import { songs, stripFurigana, toEmbedUrl } from './libs/data'
+import { songs, parseFurigana, toEmbedUrl } from './libs/data'
 import { createPlayer } from './youtube'
 
 const App: Component = () => {
@@ -50,7 +50,7 @@ const App: Component = () => {
             <div class="flex flex-row">
               <h1
                 class={clsx(
-                  'border-y border-l border-black p-2 rounded-l-lg',
+                  'border-y border-l border-black p-2 rounded-l-lg cursor-pointer',
                   kanaMode() === 'kana' && 'bg-pink-200'
                 )}
                 onClick={() => setKanaMode('kana')}
@@ -59,7 +59,7 @@ const App: Component = () => {
               </h1>
               <h1
                 class={clsx(
-                  'border border-black p-2 rounded-r-lg',
+                  'border border-black p-2 rounded-r-lg cursor-pointer',
                   kanaMode() === 'romaji' && 'bg-pink-200'
                 )}
                 onClick={() => setKanaMode('romaji')}
@@ -70,7 +70,7 @@ const App: Component = () => {
             <div class="flex flex-row">
               <h1
                 class={clsx(
-                  'border-y border-l border-black p-2 rounded-l-lg',
+                  'border-y border-l border-black p-2 rounded-l-lg cursor-pointer',
                   displayMode() === 'lyrics' && 'bg-pink-200'
                 )}
                 onClick={() => setDisplayMode('lyrics')}
@@ -79,7 +79,7 @@ const App: Component = () => {
               </h1>
               <h1
                 class={clsx(
-                  'border border-black p-2 rounded-r-lg',
+                  'border border-black p-2 rounded-r-lg cursor-pointer',
                   displayMode() === 'name' && 'bg-pink-200'
                 )}
                 onClick={() => setDisplayMode('name')}
@@ -100,11 +100,15 @@ const App: Component = () => {
                   )}
                   onClick={() => setSongIndex(i())}
                 >
-                  {stripFurigana(
-                    displayMode() === 'lyrics'
-                      ? song[kanaMode()].lyrics
-                      : `${song[kanaMode()].author} - ${song[kanaMode()].name}`
-                  )}
+                  <span
+                    innerHTML={parseFurigana(
+                      displayMode() === 'lyrics'
+                        ? song[kanaMode()].lyrics
+                        : `${song[kanaMode()].author} - ${
+                            song[kanaMode()].name
+                          }`
+                    ).join('')}
+                  ></span>
                 </li>
               )}
             </For>

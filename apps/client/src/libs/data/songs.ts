@@ -81,14 +81,29 @@ export const songs: AniSong[] = [
       name: 'More One Night',
       author: '水瀬いのり',
       lyrics:
-        '(気付)けばキミとの旅支度 モノクロに輝く楽園へLet\'s go 作りましょ 作りましょ あなたと私の世界をさあ作りましょ 始めましょ 始めましょ 何から始めましょ？'
+        "(気付)けばキミとの旅支度 モノクロに輝く楽園へLet's go 作りましょ 作りましょ あなたと私の世界をさあ作りましょ 始めましょ 始めましょ 何から始めましょ？"
     },
     romaji: {
       name: 'More One Night',
       author: 'Inori Minase',
       lyrics:
-        '(Kidzu)keba kimi to no tabi jitaku Monokuro ni kagayaku rakuen e Let\'s go Tsukurimasho tsukurimasho Anata to watashi no sekai o saa tsukuri masho Hajimemasho hajimemasho Nani kara hajimemasho?'
+        "(Kidzu)keba kimi to no tabi jitaku Monokuro ni kagayaku rakuen e Let's go Tsukurimasho tsukurimasho Anata to watashi no sekai o saa tsukuri masho Hajimemasho hajimemasho Nani kara hajimemasho?"
     },
     url: 'https://youtu.be/sQn6j79Kgiw?t=28&end=45'
   },
+  {
+    kana: {
+      name: 'ANSWER',
+      author: 'Only this time',
+      lyrics:
+        '{証明,しょうめい}したいんだ　{切,き}り{拓,ひら}いた{空,そら}へ{放,はな}つ{衝動,しょうどう}　{背,せ}{負,お}った{期,き}{待,たい}はもう{容,よう}{赦,しゃ}なくのしかかって　{後,こう}{悔,かい}したって{戻,もど}れない　もうこんな{壊,こわ}れそうな{痛,いた}みも {全,すべ}て{力,ちから}に{変,か}えてしまうんだろう　その{答,こた}えはずっとこの{手,て}にあったんだ'
+    },
+    romaji: {
+      name: 'ANSWER',
+      author: 'Only this time',
+      lyrics:
+        'shoumei shitainda kirihiraita sora e hanatsu shoudou seotta kitai wa mou yousha naku noshikakatte koukai shitatte modorenai mou konna kowaresou na itami mo subete chikara ni kaete shimaundarou sono kotae wa zutto kono te ni attanda'
+    },
+    url: 'https://youtu.be/EO8iX02fsKI?t=213&end=239'
+  }
 ]
