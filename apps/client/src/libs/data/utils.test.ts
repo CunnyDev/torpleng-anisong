@@ -3,7 +3,7 @@ import { parseUrl, parseFurigana, toEmbedUrl } from './utils'
 
 describe('Test Utility Function', () => {
   it('parseFurigana Function', () => {
-    expect(parseFurigana('Hello, {world,ワールド}!')).toBe([
+    expect(parseFurigana('Hello, {world,ワールド}!')).toStrictEqual([
       'Hello, ',
       '<ruby>world<rt>ワールド</rt></ruby>',
       '!'
