@@ -37,7 +37,7 @@ jobs:
         id: pnpm-install
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 7
+          version: 8
           run_install: false
 
       - name: Get pnpm store directory 📁
@@ -86,7 +86,7 @@ jobs:
         id: pnpm-install
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 7
+          version: 8
           run_install: false
 
       - name: Get pnpm store directory 📁
