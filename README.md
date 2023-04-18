@@ -29,7 +29,7 @@ Example:
 }
 ```
 
-_Note: {待,ま} is for furigana, this is optional and not required yet and it will be very long until I complete this function_
+_Note: {待,ま} is for furigana, this is now required as furigana is completed thanks to @tinarskii_
 
 _Disclaimer: I'm not Japanese, ~~just a weeb~~, correct me if I'm wrong_
 
