@@ -36,7 +36,7 @@ export const songs: AniSong[] = [
       name: 'Dimension Tripper!!!!',
       author: 'nao',
       lyrics:
-        'そう{今,いま}{全,すべ}ての{次,じ}{元,げん}が {結,むす}ばれる{様,よう}に{明,あ}{日,ひた}を{飛,と}び{超,こ}えて まだ{見,み}えない{新,あら}たな{歴,れき}{史,し}を {描,えが}けるように…「Fortune favors the brave.」{Dimension,ディメンション} {Tripper,トリッパー}!!!!'
+        'そう{今,いま}{全,すべ}ての{次,じ}{元,げん}が {結,むす}ばれる{様,よう}に{明,あ}{日,した}を{飛,と}び{超,こ}えて まだ{見,み}えない{新,あら}たな{歴,れき}{史,し}を {描,えが}けるように…「Fortune favors the brave.」Dimension Tripper!!!!'
     },
     romaji: {
       name: 'Dimension Tripper!!!!',
