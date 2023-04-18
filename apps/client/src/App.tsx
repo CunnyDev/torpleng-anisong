@@ -108,7 +108,7 @@ const App: Component = () => {
                             song[kanaMode()].name
                           }`
                     ).join('')}
-                  ></span>
+                  />
                 </li>
               )}
             </For>
