@@ -13,8 +13,6 @@
   ],
   "ignorePatterns": ["dist", ".turbo", "node_modules", "pnpm-lock.yaml"],
   "rules": {
-    "prettier/prettier": ["warn", {
-      "endOfLine": "auto"
-    }]
+    "prettier/prettier": "warn"
   }
 }
