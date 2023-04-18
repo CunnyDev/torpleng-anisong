@@ -29,7 +29,7 @@ Example:
 }
 ```
 
-_Note: {待,ま} is for furigana, this is now required as furigana is completed thanks to @tinarskii_
+Note: {待,ま} is for furigana, this is now required as furigana is completed thanks to @tinarskii
 
 _Disclaimer: I'm not Japanese, ~~just a weeb~~, correct me if I'm wrong_
 
@@ -38,5 +38,5 @@ _Disclaimer: I'm not Japanese, ~~just a weeb~~, correct me if I'm wrong_
 - Should be anime song that is accessible in youtube. Use **Official MV** > **Official music** > Unofficial Video
 - First hiragana of sentence should match the last hiragana of previous sentence (のう - の is acceptable)
 - In case latest lyrics is hard to continue
-  - You may use second/third hiragana to match the lasy hiragana of previous lyrics. Use parenthesis in this case.
+  - You may use second/third hiragana to match the last hiragana of previous lyrics. Use parenthesis in this case.
   - You may add/remove sentences of previous music.

@@ -105,5 +105,18 @@ export const songs: AniSong[] = [
         'shoumei shitainda kirihiraita sora e hanatsu shoudou seotta kitai wa mou yousha naku noshikakatte koukai shitatte modorenai mou konna kowaresou na itami mo subete chikara ni kaete shimaundarou sono kotae wa zutto kono te ni attanda'
     },
     url: 'https://youtu.be/EO8iX02fsKI?t=213&end=239'
+  },
+  {
+    kana: {
+      name: 'ばかみたい【Taxi Driver Edition】',
+      author: '{桐生,きりゅう} {一馬,かずま} ({黒田,くろだ} {崇矢,たかや}) ',
+      lyrics: 'だめだね だめよ だめなのよ あんたが {好,す}きで{好,す}きすぎて'
+    },
+    romaji: {
+      name: 'Baka Mitai【Taxi Driver Edition】',
+      author: 'Kiryuu Kazuma (Kuroda Takaya)',
+      lyrics: 'dame da ne dame yo dame nanoyo anta ga suki de suki sugite'
+    },
+    url: 'https://youtu.be/ZSBnCOGj2t4?t=66&end=78'
   }
 ]

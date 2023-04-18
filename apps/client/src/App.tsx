@@ -1,3 +1,4 @@
+/* eslint-disable solid/no-innerhtml */
 /// <reference types="@types/youtube" />
 
 import { Component, createSignal, For } from 'solid-js'
@@ -104,7 +105,7 @@ const App: Component = () => {
                     innerHTML={parseFurigana(
                       displayMode() === 'lyrics'
                         ? song[kanaMode()].lyrics
-                        : `${song[kanaMode()].author} - ${
+                        : `${song[kanaMode()].author} — ${
                             song[kanaMode()].name
                           }`
                     ).join('')}
@@ -118,8 +119,14 @@ const App: Component = () => {
         {/* Controls */}
         <div class="flex flex-col items-center justify-start gap-6">
           <h1 class="md:text-4xl text-3xl text-center">
-            {songIndex() + 1}. {songs[songIndex()].kana.author} -{' '}
-            {songs[songIndex()].kana.name}
+            {songIndex() + 1}.{' '}
+            <span
+              innerHTML={parseFurigana(
+                `${songs[songIndex()].kana.author} — ${
+                  songs[songIndex()].kana.name
+                }`
+              ).join('')}
+            />
           </h1>
           <h2 class="text-lg text-gray-400">
             You can add more songs at{' '}
@@ -127,7 +134,7 @@ const App: Component = () => {
               href="https://github.com/CunnyDev/torpleng-anisong"
               class="underline"
             >
-              github
+              Github
             </a>
           </h2>
 
