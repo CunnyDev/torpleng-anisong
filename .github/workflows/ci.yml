@@ -49,9 +49,9 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ${{ steps.pnpm-install.outputs.dest }}
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm8-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-pnpm-
+            ${{ runner.os }}-pnpm8-
 
       - name: Install dependencies 👨🏻‍💻
         run: pnpm install --frozen-lockfile
@@ -97,9 +97,9 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ${{ steps.pnpm-install.outputs.dest }}
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm8-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-pnpm-
+            ${{ runner.os }}-pnpm8-
 
       - name: Install dependencies 👨🏻‍💻
         run: pnpm install --frozen-lockfile
