@@ -16,7 +16,7 @@
     "vite": "4.3.1",
     "vite-plugin-html": "3.2.0",
     "vite-plugin-solid": "2.7.0",
-    "vite-plugin-windicss": "1.8.10",
+    "vite-plugin-windicss": "1.9.0",
     "vitest": "0.30.1"
   }
 }
