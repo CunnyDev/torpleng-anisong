@@ -131,5 +131,20 @@ export const songs: AniSong[] = [
       lyrics: 'ten made todoite ima ni mo wa chikire agaite mogaite doko made mo tsudzuku roman'
     },
     url: 'https://youtu.be/ZLRyI2Q_F3s?t=258&end=282'
+  },
+  {
+    kana: {
+      name: 'アイドル (Idol)',
+      author: "YOASOBI",
+      lyrics:
+        'まさに最強で無敵のアイドル 弱点なんて見当たらない 一番星を宿している 弱いとこなんて見せちゃ ダメダメ 知りたくないとこは見せずに 唯一無二じゃなくちゃ イヤイヤ それこそ本物のアイ'
+    },
+    romaji: {
+      name: 'アイドル (Idol)',
+      author: "YOASOBI",
+      lyrics:
+        'Masani saikyou de muteki no aidoru Jakuten nante miataranai Ichibanboshi wo yadoshiteiru Yowai to konante misecha (Hey! Hey!) Dame, dame (Hey! Hey!) Shiritakunai toko wa misezu ni (Hey! Hey! Hey! Hey!) Yuiitsumuni janakucha (Hey! Hey!) Iya, iya (Hey! Hey!) Sorekoso honmono no ai (Hey!)'
+      },
+    url: 'https://youtu.be/ZRtdQ81jPUQ?si=XqOeu-aSAx9mWY62?t=104&end=125'
   }
 ]
