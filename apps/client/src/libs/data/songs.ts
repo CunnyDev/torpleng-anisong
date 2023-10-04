@@ -3,13 +3,13 @@ import { AniSong } from './schema'
 export const songs: AniSong[] = [
   {
     kana: {
-      name: 'Daydream cafe',
+      name: 'Daydream café',
       author: "Petit Rabbit's",
       lyrics:
         'こころぴょんぴょん{待,ま}ち？ {考,かんが}えるふりして もうちょっと{近,ちか}づいちゃえ {簡単,かんたん}には{教,おし}えないっ こんなに{好,す}きなことは{内緒,ないしょ}なの'
     },
     romaji: {
-      name: 'Daydream cafe',
+      name: 'Daydream café',
       author: "Petit Rabbit's",
       lyrics:
         'kokoro pyon pyon machi? kangaeru furishite mou chotto chikadzuichae kantan ni wa oshienai konna ni suki na koto wa naisho na no'
@@ -133,5 +133,34 @@ export const songs: AniSong[] = [
         'ten made todoite ima ni mo wa chikire agaite mogaite doko made mo tsudzuku roman'
     },
     url: 'https://youtu.be/ZLRyI2Q_F3s?t=258&end=282'
+  },
+  {
+    kana: {
+      name: 'バグ',
+      author: '25{時,じ}、ナイトコードで。 × {鏡音,かがみね}レン',
+      lyrics:
+        'まあ！{絶叫,ぜっきょう}な{感情,かんじょう}{落下,らっか} パッパラノーイ「ア」 {溺,おぼ}れ{声,こえ}{上,あ}げては ぐるぐる まあ！{絶体,ぜったい}{絶命,ぜつめい}{落下,らっか}やったラ{滅多,めった}ラ {沈,しず}めユメユメ {嫌,いや}{嫌,いや}{嫌,いや}'
+    },
+    romaji: {
+      name: 'Bug',
+      author: 'Nightcord at 25:00 × Kagamine Len',
+      lyrics:
+        'maa! zekkyou na kanjyourakka papparanooi "a" obore koe agete wa guruguru maa! zettai zetsumei rakka yatta ra mettara shizume yumeyume iya iya iya'
+    },
+    url: 'https://youtu.be/2Ii7UBMxWVw?t=46&end=56'
+  },
+  {
+    kana: {
+      name: '{独,ひと}りんぼエンヴィー',
+      author: '25{時,じ}、ナイトコードで。 × {初音,はつね}ミク',
+      lyrics:
+        '{嫌,いや}んよ {嫌,いや}んよ そっぽ{向,む}いて {今日,きょう}も{私,わたし}は{悪,わる}い{子,こ} {要,い}らん{子,こ}'
+    },
+    romaji: {
+      name: 'Hitorinbo Envy',
+      author: 'Nightcord at 25:00 × Hatsume Miku',
+      lyrics: 'iyanyo iyanyo soppo muite kyou mo watashi wa warui ko iran ko'
+    },
+    url: 'https://youtu.be/tIvL_TlLckg?t=60&end=70'
   }
 ]
