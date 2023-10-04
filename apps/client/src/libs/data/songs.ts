@@ -123,12 +123,14 @@ export const songs: AniSong[] = [
     kana: {
       name: '{光,ひかり}と{影,かげ}のロマン',
       author: '{宇,う}{徳,とく}{敬,けい}{子,こ}',
-      lyrics: '{天,てん}まで {届,とど}いて {今,いま}にもはちきれ あがいて もがいて どこまでも{続,つづ}くロマン'
+      lyrics:
+        '{天,てん}まで {届,とど}いて {今,いま}にもはちきれ あがいて もがいて どこまでも{続,つづ}くロマン'
     },
     romaji: {
       name: 'Hikari to Kage no Roman',
       author: 'Utoku Keiko',
-      lyrics: 'ten made todoite ima ni mo wa chikire agaite mogaite doko made mo tsudzuku roman'
+      lyrics:
+        'ten made todoite ima ni mo wa chikire agaite mogaite doko made mo tsudzuku roman'
     },
     url: 'https://youtu.be/ZLRyI2Q_F3s?t=258&end=282'
   }
