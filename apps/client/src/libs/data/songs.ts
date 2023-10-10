@@ -162,5 +162,19 @@ export const songs: AniSong[] = [
       lyrics: 'iyanyo iyanyo soppo muite kyou mo watashi wa warui ko iran ko'
     },
     url: 'https://youtu.be/tIvL_TlLckg?t=60&end=70'
+  },
+  {
+    kana: {
+      name: '{粛聖,しゅくせい}!! ロリ{神,かみ}レクイエム☆',
+      author: 'しぐれうい（9さい）',
+      lyrics:
+        'これは{救済,きゅうさい}のレクイエム せーのっ {触,さわ}ったら{逮捕,たいほ}！（Ah！）{極,ごく}Chu♡ de {点呼,てんこ}！（Uh！） いちにーさんしー？（ごめんなさーい）ハァ？( ﾟДﾟ) ごめんなさいが、{聞,き}こえなーい（え〜！） {粛聖,しゅくせい}!! ロリ{神,かみ}レクイエム☆'
+    },
+    romaji: {
+      name: 'Shukusei!! Loli-Kami Requiem☆',
+      author: 'Shigure Ui（9 years old）',
+      lyrics: 'korewakyusainorekuiemu seeno sawattarataiho (Ah！) goku Chu♡ de tenko！（Uh！） ichi nii san shii？（gomennasaai）ha？( ﾟДﾟ) gomennasaaiga、kikoenai（e〜！） shukusei!! rorikamirekuiemu☆'
+    },
+    url: 'https://youtu.be/Ci_zad39Uhw?t=6&end=27'
   }
 ]
