@@ -179,5 +179,20 @@ export const songs: AniSong[] = [
         'korewakyusainorekuiemu seeno sawattarataiho (Ah！) goku Chu♡ de tenko！（Uh！） ichi nii san shii？（gomennasaai）ha？( ﾟДﾟ) gomennasaaiga、kikoenai（e〜！） shukusei!! rorikamirekuiemu☆'
     },
     url: 'https://youtu.be/Ci_zad39Uhw?t=6&end=27'
+  },
+  {
+    kana: {
+      name: '{裏,うら}{切,ぎ}り{者,もの}のレクイエム Giorno ver. (TV Size)',
+      author: 'ハセガワダイスケ',
+      lyrics:
+        "レクイエムを…Wow Nessuno può sfuggire al destino scelto. Rimane solo il risultato che voi sarete distrutti. Oh, we're going to rage {絶望,ぜつぼう}が{手,て}{招,まね}く {世界,せかい}に{立,た}ち{向,む}かう Don't care {慈悲,じひ}などいらないさ"
+    },
+    romaji: {
+      name: "Traitor's Requiem Giorno ver. (TV Size)",
+      author: 'Hasegawa Daisuke',
+      lyrics:
+        "Requiem wo... Wow Nessuno può sfuggire al destino scelto. Rimane solo il risultato che voi sarete distrutti. Oh, we're going to rage zetsubou ga temaneku sekai ni tachimakau Don't care jihi nado iranai sa"
+    },
+    url: 'https://youtu.be/tcK3qP85I3M?t=59&end=96'
   }
 ]
