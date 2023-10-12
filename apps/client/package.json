@@ -9,13 +9,13 @@
   },
   "dependencies": {
     "clsx": "2.0.0",
-    "solid-js": "1.7.12"
+    "solid-js": "1.8.1"
   },
   "devDependencies": {
     "@types/youtube": "0.0.48",
     "vite": "4.4.11",
     "vite-plugin-html": "3.2.0",
-    "vite-plugin-solid": "2.7.0",
+    "vite-plugin-solid": "2.7.1",
     "vite-plugin-windicss": "1.9.1",
     "vitest": "0.34.6"
   }
