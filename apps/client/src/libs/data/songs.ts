@@ -137,13 +137,14 @@ export const songs: AniSong[] = [
   {
     kana: {
       name: 'バグ',
-      author: '25{時,じ}、ナイトコードで。 × {鏡音,かがみね}レン',
+      author:
+        'かいりきベア / 25{時,じ}、ナイトコードで。 × {鏡音,かがみね}レン',
       lyrics:
         'まあ！{絶叫,ぜっきょう}な{感情,かんじょう}{落下,らっか} パッパラノーイ「ア」 {溺,おぼ}れ{声,こえ}{上,あ}げては ぐるぐる まあ！{絶体,ぜったい}{絶命,ぜつめい}{落下,らっか}やったラ{滅多,めった}ラ {沈,しず}めユメユメ {嫌,いや}{嫌,いや}{嫌,いや}'
     },
     romaji: {
       name: 'Bug',
-      author: 'Nightcord at 25:00 × Kagamine Len',
+      author: 'Kairiki bear / Nightcord at 25:00 × Kagamine Len',
       lyrics:
         'maa! zekkyou na kanjyourakka papparanooi "a" obore koe agete wa guruguru maa! zettai zetsumei rakka yatta ra mettara shizume yumeyume iya iya iya'
     },
@@ -152,13 +153,14 @@ export const songs: AniSong[] = [
   {
     kana: {
       name: '{独,ひと}りんぼエンヴィー',
-      author: '25{時,じ}、ナイトコードで。 × {初音,はつね}ミク',
+      author:
+        'koyori（{電,でん}ポルP）/ 25{時,じ}、ナイトコードで。 × {初音,はつね}ミク',
       lyrics:
         '{嫌,いや}んよ {嫌,いや}んよ そっぽ{向,む}いて {今日,きょう}も{私,わたし}は{悪,わる}い{子,こ} {要,い}らん{子,こ}'
     },
     romaji: {
       name: 'Hitorinbo Envy',
-      author: 'Nightcord at 25:00 × Hatsume Miku',
+      author: 'koyori (Denpol-P) / Nightcord at 25:00 × Hatsume Miku',
       lyrics: 'iyanyo iyanyo soppo muite kyou mo watashi wa warui ko iran ko'
     },
     url: 'https://youtu.be/tIvL_TlLckg?t=60&end=70'
@@ -173,7 +175,8 @@ export const songs: AniSong[] = [
     romaji: {
       name: 'Shukusei!! Loli-Kami Requiem☆',
       author: 'Shigure Ui（9 years old）',
-      lyrics: 'korewakyusainorekuiemu seeno sawattarataiho (Ah！) goku Chu♡ de tenko！（Uh！） ichi nii san shii？（gomennasaai）ha？( ﾟДﾟ) gomennasaaiga、kikoenai（e〜！） shukusei!! rorikamirekuiemu☆'
+      lyrics:
+        'korewakyusainorekuiemu seeno sawattarataiho (Ah！) goku Chu♡ de tenko！（Uh！） ichi nii san shii？（gomennasaai）ha？( ﾟДﾟ) gomennasaaiga、kikoenai（e〜！） shukusei!! rorikamirekuiemu☆'
     },
     url: 'https://youtu.be/Ci_zad39Uhw?t=6&end=27'
   }
