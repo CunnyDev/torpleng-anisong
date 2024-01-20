@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@types/youtube": "0.0.48",
-    "vite": "4.4.11",
+    "vite": "4.5.2",
     "vite-plugin-html": "3.2.0",
     "vite-plugin-solid": "2.7.1",
     "vite-plugin-windicss": "1.9.1",
